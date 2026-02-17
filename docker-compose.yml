@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  haeseom-translator-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: haeseom-translator-web
+    ports:
+      - "7000:7000"
+    restart: unless-stopped
+    networks:
+      - haeseom-network
+
+networks:
+  haeseom-network:
+    driver: bridge
