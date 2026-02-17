@@ -39,8 +39,7 @@ windows/
 # 테스트
 test/
 
-# Docker 관련
+# Docker 관련 (nginx.conf는 빌드에 필요하므로 제외하지 않음)
 Dockerfile
 docker-compose.yml
 .dockerignore
-nginx.conf
